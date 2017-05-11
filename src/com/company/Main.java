@@ -7,6 +7,6 @@ public class Main {
         System.out.println("Gradebook Example");
         new Course("algebra");
         new Student("matthew", "menna");
-        new Assignment("Syllabus", 20, 0);
+        new Assignment(20, 0);
     }
 }
