@@ -20,8 +20,9 @@ public class Main {
         new Student("matthew", "menna");
         new Assignment(20, 0);
 
-        bufferwrite = new BufferedWriter(new FileWriter(pathName));
+        bufferwrite = new BufferedWriter(new FileWriter(pathName, true));
         bufferwrite.write("test");
+        bufferwrite.close();
     }
 
 }
