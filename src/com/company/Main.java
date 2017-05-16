@@ -1,6 +1,7 @@
 package com.company;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class Main {
 
@@ -20,8 +21,11 @@ public class Main {
         new Student("matthew", "menna");
         new Assignment(20, 0);
 
-        bufferwrite = new BufferedWriter(new FileWriter(pathName, true));
-        bufferwrite.write("test");
+        Scanner filecontent = new Scanner(System.in);
+        String content = filecontent.nextLine();
+
+        bufferwrite = new BufferedWriter(new FileWriter(pathName ));
+        bufferwrite.write(content);
         bufferwrite.close();
     }
 
